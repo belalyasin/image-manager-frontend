@@ -1,27 +1,28 @@
-# Demo1
+# Image Manager: Front End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Angular front end for Image Manager. The API lives in [image-manager-api](https://github.com/belalyasin/image-manager-api).
 
-## Development server
+## What is in it
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Authentication: login, registration, forgot password, route guard
+- File manager: browse folders and the images inside them
+- Account and profile pages
 
-## Code scaffolding
+The layout and base components come from the Metronic 8 Angular template.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech stack
 
-## Build
+Angular 12, TypeScript, Angular Material, ng-bootstrap, RxJS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting started
 
-## Running unit tests
+Start the API first, then:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/belalyasin/image-manager-frontend.git
+cd image-manager-frontend
+npm install
+npm start
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Then open http://localhost:4200. The API address is set in `src/environments/environment.ts` (`apiUrl`, default `http://localhost:3000/api/v1`).
